@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Navbar from "../navbar/navbar";
-import React, { useState, useEffect } from 'react';
-import Carousel from '../carousel/carousel';
+import React, { useState, useEffect } from "react";
+import Carousel from "../carousel/carousel";
 
 export default function Home () {
 
@@ -175,7 +175,7 @@ export default function Home () {
                         <p className="mt-4 text-lg leading-relaxed text-slate-500">
                             The extension comes with three pre-built pages to help you
                             get started faster. You can change the text and images and
-                            you're good to go.
+                            youre good to go.
                         </p>
                         <ul className="list-none mt-6">
                             <li className="py-2">
@@ -428,7 +428,7 @@ export default function Home () {
                         </h6>
                         <p className="mt-2 mb-4 text-slate-400">
                         Some quick example text to build on the card title and make up
-                        the bulk of the card's content.
+                        the bulk of the cards content.
                         </p>
                     </div>
                     <div className="w-full lg:w-3/12 px-4 text-center">
@@ -440,7 +440,7 @@ export default function Home () {
                         </h5>
                         <p className="mt-2 mb-4 text-slate-400">
                         Some quick example text to build on the card title and make up
-                        the bulk of the card's content.
+                        the bulk of the cards content.
                         </p>
                     </div>
                     <div className="w-full lg:w-3/12 px-4 text-center">
@@ -452,7 +452,7 @@ export default function Home () {
                         </h5>
                         <p className="mt-2 mb-4 text-slate-400">
                         Some quick example text to build on the card title and make up
-                        the bulk of the card's content.
+                        the bulk of the cards content.
                         </p>
                     </div>
                     </div>

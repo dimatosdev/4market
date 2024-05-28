@@ -4,6 +4,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Link from 'next/link'; // Importando o componente Link
 
 interface SlideContent {
     id: number;
@@ -18,10 +19,10 @@ interface SlideContent {
 const slidesContent: SlideContent[] = [
     {
         id: 1,
-        title: "Engajamento",
+        title: "Working with us is a pleasure",
         paragraphs: [
-            "Criamos relacionamentos, gerando confiança e interesse",
-            "Ao desenvolver estratégias eficazes de engajamento, você não apenas atrai a atenção do seu público, mas também o mantém interessado e envolvido com sua marca ao longo do tempo."
+            "Dont let your uses guess by attaching tooltips and popovers to any element. Just make sure you enable them first via JavaScript.",
+            "The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you&apos;re good to go. Just make sure you enable them first via JavaScript."
         ],
         linkText: "Check Notus NextJS!",
         imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80",
@@ -56,11 +57,11 @@ const Carousel: React.FC = () => {
                                 {paragraph}
                             </p>
                         ))}
-                        <a href="/">
-                            <div className="font-bold text-slate-700 mt-8">
+                        <Link href="/" passHref>
+                            <a className="font-bold text-slate-700 mt-8">
                                 {slide.linkText}
-                            </div>
-                        </a>
+                            </a>
+                        </Link>
                     </div>
 
                     <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">

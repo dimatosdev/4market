@@ -12,24 +12,50 @@ interface SlideContent {
     paragraphs: string[];
     linkText: string;
     imageUrl: string;
-    serviceTitle: string;
-    serviceText: string;
 }
 
 const slidesContent: SlideContent[] = [
     {
         id: 1,
-        title: "Working with us is a pleasure",
+        title: "Engajamento",
         paragraphs: [
-            "Dont let your uses guess by attaching tooltips and popovers to any element. Just make sure you enable them first via JavaScript.",
-            "The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you&apos;re good to go. Just make sure you enable them first via JavaScript."
+            "Criamos relacionamentos, gerando confiança e interesse",
+            "Ao desenvolver estratégias eficazes de engajamento, você não apenas atrai a atenção do seu público, mas também o mantém interessado e envolvido com suamarca ao longo do tempo."
         ],
-        linkText: "Check Notus NextJS!",
-        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80",
-        serviceTitle: "Top Notch Services",
-        serviceText: "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens."
+        linkText: "Fale com um especialista",
+        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
     },
-    // Adicione mais slides se necessário
+    {
+        id: 2,
+        title: "Desenvolvimento",
+        paragraphs: [
+            "Aprimoramento de sistemas e estratégias",
+            "Isso envolve a identificação de desafios empresariais, a criação de soluções inovadoras e a implementação de medidas para otimizar processos e alcançar objetivos organizacionais"
+        ],
+        linkText: "Fale com um especialista",
+        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+    },
+    {
+        id: 3,
+        title: "Conversão",
+        paragraphs: [
+            "Ponto crucial em que o interesse é transformado em ação",
+            "Resultando em mais vendas e receita para sua empresa,"
+        ],
+        linkText: "Fale com um especialista",
+        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+    },
+    {
+        id: 4,
+        title: "Tráfego",
+        paragraphs: [
+            "Ponto crucial em que o interesse é transformado em ação",
+            "Resultando em mais vendas e receita para sua empresa,"
+        ],
+        linkText: "Fale com um especialista",
+        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+    },
+    
 ];
 
 const Carousel: React.FC = () => {
@@ -44,8 +70,9 @@ const Carousel: React.FC = () => {
     return (
         <Slider {...settings}>
             {slidesContent.map(slide => (
+                <>
                 <div key={slide.id} className="flex flex-wrap items-center mt-32">
-                    <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                    <div  className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                         <div className="text-slate-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                             <i className="fas fa-user-friends text-xl"></i>
                         </div>
@@ -58,9 +85,9 @@ const Carousel: React.FC = () => {
                             </p>
                         ))}
                         <Link href="/" passHref>
-                            <a className="font-bold text-slate-700 mt-8">
+                            <button className="bg-blue-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 {slide.linkText}
-                            </a>
+                            </button>
                         </Link>
                     </div>
 
@@ -69,19 +96,15 @@ const Carousel: React.FC = () => {
                             <img
                                 alt="..."
                                 src={slide.imageUrl}
-                                className="w-full align-middle rounded-t-lg"
+                                className="w-full align-middle rounded-lg"
                             />
-                            <blockquote className="relative p-8 mb-4">
-                                <h4 className="text-xl font-bold text-white">
-                                    {slide.serviceTitle}
-                                </h4>
-                                <p className="text-md font-light mt-2 text-white">
-                                    {slide.serviceText}
-                                </p>
-                            </blockquote>
                         </div>
                     </div>
                 </div>
+
+                </>
+
+
             ))}
         </Slider>
     );

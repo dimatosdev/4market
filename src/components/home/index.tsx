@@ -131,12 +131,11 @@ export default function Home () {
                     </div>
                     </div>
 
-                    <Carousel />
-
+                    <Carousel /> 
                 </div>
                 </section>
 
-                <section className="relative py-20">
+{/*                 <section className="relative py-20">
                 <div
                     className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                     style={{ transform: "translateZ(0)" }}
@@ -225,9 +224,9 @@ export default function Home () {
                     </div>
                     </div>
                 </div>
-                </section>
+                </section> */}
 
-                <section className="pt-20 pb-48">
+{/*                 <section className="pt-20 pb-48">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap justify-center text-center mb-24">
                     <div className="w-full lg:w-6/12 px-4">
@@ -382,7 +381,7 @@ export default function Home () {
                     </div>
                     </div>
                 </div>
-                </section>
+                </section> */}
 
                 <section className="pb-20 relative block bg-slate-800">
                 <div

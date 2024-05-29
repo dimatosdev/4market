@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "../navbar/navbar";
 import React, { useState, useEffect } from "react";
 import Carousel from "../carousel/carousel";
+import InstagramFeed from "./InstagramFeed";
 
 export default function Home () {
 
@@ -461,6 +462,7 @@ export default function Home () {
                         </div>
                     </div>
                 </section>
+                <InstagramFeed/>
             </main>
             <footer className="flex md:flex-row md:justify-evenly gap-y-5 flex-col justify-center items-center p-10 px-3 z-99999 bg-slate-900">
             <div className="px-4 text-center md:text-left">

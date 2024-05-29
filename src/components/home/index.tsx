@@ -383,37 +383,17 @@ export default function Home () {
                 </div>
                 </section> */}
 
-                <section className="pb-20 relative block bg-slate-800">
-                <div
-                    className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
-                    style={{ transform: "translateZ(0)" }}
-                >
-                    <svg
-                    className="absolute bottom-0 overflow-hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    version="1.1"
-                    viewBox="0 0 2560 100"
-                    x="0"
-                    y="0"
-                    >
-                    <polygon
-                        className="text-slate-800 fill-current"
-                        points="2560 0 2560 100 0 100"
-                    ></polygon>
-                    </svg>
-                </div>
+                <section className="pb-20 relative block bg-blue-700">
 
-                <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
+
+                <div className="container mx-auto px-4 lg:pt-24 lg:pb-24">
                     <div className="flex flex-wrap text-center justify-center">
                     <div className="w-full lg:w-6/12 px-4">
-                        <h2 className="text-4xl font-semibold text-white">
-                        Build something
+                        <h2 className="text-4xl font-semibold text-indigo-300">
+                        Potencialize seus resultados abandonando fórmulas ineficazes e aproveitando seu tempo de forma estratégica
                         </h2>
-                        <p className="text-lg leading-relaxed mt-4 mb-4 text-slate-400">
-                        Put the potentially record low maximum sea ice extent tihs
-                        year down to low ice. According to the National Oceanic and
-                        Atmospheric Administration, Ted, Scambos.
+                        <p className="text-2xl leading-relaxed mt-4 mb-4 text-white italic">
+                        Desperte a excelência: <br/> uma nova era de conquistas aguarda sua empresa
                         </p>
                     </div>
                     </div>
@@ -457,76 +437,54 @@ export default function Home () {
                     </div>
                 </div>
                 </section>
-                <section className="relative block py-24 lg:pt-0 bg-slate-800">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-                    <div className="w-full lg:w-6/12 px-4">
-                        <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-slate-200">
-                        <div className="flex-auto p-5 lg:p-10">
-                            <h4 className="text-2xl font-semibold">
-                            Want to work with us?
-                            </h4>
-                            <p className="leading-relaxed mt-1 mb-4 text-slate-500">
-                            Complete this form and we will get back to you in 24
-                            hours.
-                            </p>
-                            <div className="relative w-full mb-3 mt-8">
-                            <label
-                                className="block uppercase text-slate-600 text-xs font-bold mb-2"
-                                htmlFor="full-name"
-                            >
-                                Full Name
-                            </label>
-                            <input
-                                type="text"
-                                className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                placeholder="Full Name"
-                            />
+                <section id="contact" className="relative block py-24 lg:pt-0 bg-white">
+                    <div className='text-white text-center md:p-10 p-5 pb-10 mt-20'>
+                        <div className='max-w-xl mx-auto'>
+                            <div className='text-6xl mb-5 text-slate-900'>
+                                Leve sua empresa para o próximo nível. <br /> Vamos conversar?
                             </div>
-
-                            <div className="relative w-full mb-3">
-                            <label
-                                className="block uppercase text-slate-600 text-xs font-bold mb-2"
-                                htmlFor="email"
-                            >
-                                Email
-                            </label>
-                            <input
-                                type="email"
-                                className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                placeholder="Email"
-                            />
-                            </div>
-
-                            <div className="relative w-full mb-3">
-                            <label
-                                className="block uppercase text-slate-600 text-xs font-bold mb-2"
-                                htmlFor="message"
-                            >
-                                Message
-                            </label>
-                            <textarea
-                                rows={4}
-                                cols={80}
-                                className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                placeholder="Type a message..."
-                            />
-                            </div>
-                            <div className="text-center mt-6">
-                            <button
-                                className="bg-slate-800 text-white active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                type="button"
-                            >
-                                Send Message
-                            </button>
+                            <div className='flex items-center justify-center'>
+                                <a 
+                                    href='https://api.whatsapp.com/send?phone=5548991572012'
+                                    target='_blank' 
+                                    rel="noreferrer">
+                                    <div className='relative flex flex-col md:flex-row gap-5 items-center justify-center border-2 rounded-lg border-orange-600 px-10 py-10'>
+                                        <i className="text-9xl fa-brands fa-whatsapp text-green-500"></i>
+                                        <div className='text-left text-slate-900'>
+                                            <div className='font-bold text-2xl text-slate-900'>Atendimento via Whatsapp</div>
+                                            <div>Envie mensagem para</div>
+                                            <div>(48) 99157-2012</div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        </div>
                     </div>
-                    </div>
-                </div>
                 </section>
             </main>
+            <footer className="flex md:flex-row md:justify-evenly gap-y-5 flex-col justify-center items-center p-10 px-3 z-99999 bg-slate-900">
+            <div className="px-4 text-center md:text-left">
+                <img className="w-64" src="img/logo.png" alt="logo" />
+            </div>
+            <div className="px-4 text-center md:text-left">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                    <span className="text-white">ACOMPANHE</span>
+                </h3>
+                <ul className="flex justify-center md:justify-start">
+                    <li className="text-white mx-2">
+                    <a href="https://www.instagram.com/4marketbrasil" target="_blank" rel="noopener noreferrer">
+                        <i className="text-5xl fa-brands fa-instagram"></i>
+                    </a>
+                    </li>
+                    <li className="text-white mx-2">
+                    <a href="https://www.linkedin.com/company/4market" target="_blank" rel="noopener noreferrer">
+                        <i className="text-5xl fa-brands fa-linkedin"></i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+
+            </footer>
         </>
        
 

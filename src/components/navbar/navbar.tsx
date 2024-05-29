@@ -35,7 +35,7 @@ export default function Navbar() {
                   href="https://www.instagram.com/4marketbrasil/"
                   target="_blank"
                 >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 fa-brands fa-instagram text-lg leading-lg " />
+                  <i className="lg:text-blueGray-200 text-blueGray-400 fa-brands fa-instagram text-3xl leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Instagram</span>
                 </a>
               </li>
@@ -46,17 +46,17 @@ export default function Navbar() {
                   href="https://www.linkedin.com/company/4market"
                   target="_blank"
                 >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 fa-brands fa-linkedin text-lg leading-lg " />
+                  <i className="lg:text-blueGray-200 text-blueGray-400 fa-brands fa-linkedin text-3xl leading-lg " />
                   <span className="lg:hidden inline-block ml-2">LinkedIn</span>
                 </a>
               </li>
               <li className="flex items-center">
-                <button
-                  className="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                  type="button"
-                >
-                  <i className="fa-brands fa-whatsapp"></i> Contato
-                </button>
+              <a
+                href="#contact"
+                className="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+              >
+                Contato
+              </a>
               </li>
             </ul>
           </div>

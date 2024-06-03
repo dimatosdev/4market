@@ -5,19 +5,19 @@ export default function Seo({ pageTitle }: { pageTitle?: String}){
         <>
         <Head>
         <title>
-            {pageTitle && `${pageTitle} || 4Market`}
+            {pageTitle && `4Market - Assessoria Empresarial`}
         </title>
         {/* Configura o modo de compatibilidade do navegador */}
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         {/* Define as palavras-chave para SEO */}
         <meta
             name="keywords"
-            content="pesquisa personalizada avançada, agência, agente, negócios, limpo, corporativo, diretório, google maps"
+            content="marketing, agência, empresarial, negócios, corporativo, assessoria, venda, consultoria"
         />
         {/* Define a descrição da página */}
         <meta
             name="description"
-            content="4Market - Agência de Marketing Digital"
+            content="4Market - Assessoria Empresarial"
         />
         {/* Define um metadado personalizado */}
         <meta name="ibthemes" content="ATFN" />

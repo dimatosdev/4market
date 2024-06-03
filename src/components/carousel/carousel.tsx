@@ -86,7 +86,7 @@ const Carousel: React.FC = () => {
                             </p>
                         ))}
                         <Link href="/" passHref>
-                            <button className="bg-blue-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button className="bg-slate-900 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded">
                                 {slide.linkText}
                             </button>
                         </Link>

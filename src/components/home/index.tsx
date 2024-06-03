@@ -2,7 +2,6 @@ import Link from "next/link";
 import Navbar from "../navbar/navbar";
 import React, { useState, useEffect } from "react";
 import Carousel from "../carousel/carousel";
-import InstagramFeed from "./InstagramFeed";
 
 export default function Home () {
 
@@ -384,10 +383,10 @@ export default function Home () {
                 </div>
                 </section> */}
 
-                <section className="pb-20 relative block bg-blue-700">
+                <section className="pb-20 relative block bg-slate-900">
 
 
-                <div className="container mx-auto px-4 lg:pt-24 lg:pb-24">
+                <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
                     <div className="flex flex-wrap text-center justify-center">
                     <div className="w-full lg:w-6/12 px-4">
                         <h2 className="text-4xl font-semibold text-indigo-300">
@@ -398,7 +397,7 @@ export default function Home () {
                         </p>
                     </div>
                     </div>
-                    <div className="flex flex-wrap mt-12 justify-center">
+{/*                     <div className="flex flex-wrap mt-12 justify-center">
                     <div className="w-full lg:w-3/12 px-4 text-center">
                         <div className="text-slate-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                         <i className="fas fa-medal text-xl"></i>
@@ -435,10 +434,114 @@ export default function Home () {
                         the bulk of the cards content.
                         </p>
                     </div>
-                    </div>
+                    </div> */}
                 </div>
                 </section>
-                <section id="contact" className="relative block py-24 lg:pt-0 bg-white">
+                <section id="contact" className="relative block py-24 lg:pt-0 bg-slate-900">
+                    <div className="container mx-auto px-4">
+                        <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                            <div className="w-full lg:w-6/12 px-4">
+                                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-slate-200">
+                                    <div className="flex-auto p-5 lg:p-10">
+                                        <h4 className="text-2xl font-semibold">
+                                            Sua empresa no próximo nível
+                                        </h4>
+                                        <h4 className="text-2xl font-semibold">
+                                            Vamos Conversar?
+                                        </h4>
+                                        <div className="relative w-full mb-3 mt-8">
+                                            <label className="block uppercase text-slate-600 text-xs font-bold mb-2" htmlFor="full-name">
+                                                Nome
+                                            </label>
+                                            <input
+                                                type="text"
+                                                className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                placeholder="Qual seu nome?"
+                                            />
+                                        </div>
+
+                                        <div className="relative w-full mb-3">
+                                            <label className="block uppercase text-slate-600 text-xs font-bold mb-2" htmlFor="email">
+                                                E-mail
+                                            </label>
+                                            <input
+                                                type="email"
+                                                className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                placeholder="E-mail corporativo"
+                                            />
+                                        </div>
+
+                                        <div className="relative w-full mb-3">
+                                            <label className="block uppercase text-slate-600 text-xs font-bold mb-2" htmlFor="phone">
+                                                Telefone
+                                            </label>
+                                            <input
+                                                type="tel"
+                                                className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                placeholder="Telefone para contato"
+                                            />
+                                        </div>
+                                        <div className="relative w-full mb-3">
+                                            <label className="block uppercase text-slate-600 text-xs font-bold mb-2" htmlFor="full-name">
+                                                Nome da Empresa
+                                            </label>
+                                            <input
+                                                type="text"
+                                                className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                placeholder="Qual seu nome da sua empresa?"
+                                            />
+                                        </div>
+                                        <div className="relative w-full mb-3">
+                                            <label className="block uppercase text-slate-600 text-xs font-bold mb-2" htmlFor="revenue">
+                                                Faixa de Faturamento
+                                            </label>
+                                            <select className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                                                <option value="">Selecione a faixa de faturamento</option>
+                                                <option value="1">0 - 100k</option>
+                                                <option value="2">100k - 500k</option>
+                                                <option value="3">500k - 1M</option>
+                                                <option value="4">1M - 5M</option>
+                                                <option value="5">5M+</option>
+                                            </select>
+                                        </div>
+
+                                        <div className="relative w-full mb-3">
+                                            <label className="block uppercase text-slate-600 text-xs font-bold mb-2" htmlFor="segment">
+                                                Segmento
+                                            </label>
+                                            <select className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                                                <option value="">Selecione o segmento</option>
+                                                <option value="servico">Serviço</option>
+                                                <option value="varejo">Varejo</option>
+                                                <option value="industria">Indústria</option>
+                                                <option value="ecommerce">E-commerce</option>
+                                                <option value="foodservice">Food Service</option>
+                                                <option value="educacao">Educação</option>
+                                                <option value="imobiliaria">Imobiliária</option>
+                                                <option value="saas">Saas</option>
+                                                <option value="financas">Finanças</option>
+                                                <option value="franquia">Franquia</option>
+                                                <option value="telecom">Telecom</option>
+                                                <option value="energiasolar">Energia Solar</option>
+                                                <option value="turismo">Turismo</option>
+                                                <option value="outros">Outros</option>
+                                            </select>
+                                        </div>
+
+                                        <div className="text-center mt-6">
+                                            <button className="bg-slate-800 text-white active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                                Enviar Mensagem
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+{/*                 <section id="contact" className="relative block py-24 lg:pt-0 bg-white">
                     <div className='text-white text-center md:p-10 p-5 pb-10 mt-20'>
                         <div className='max-w-xl mx-auto'>
                             <div className='text-6xl mb-5 text-slate-900'>
@@ -461,32 +564,30 @@ export default function Home () {
                             </div>
                         </div>
                     </div>
-                </section>
-                <InstagramFeed/>
+                </section> */}
+                <footer className="flex md:flex-row md:justify-evenly gap-y-5 flex-col justify-center items-center p-10 px-3 z-99999 bg-slate-900">
+                    <div className="px-4 text-center md:text-left">
+                        <img className="w-64" src="img/logo.png" alt="logo" />
+                    </div>
+                    <div className="px-4 text-center md:text-left">
+                        <h3 className="text-xl font-bold text-gray-800 mb-4">
+                            <span className="text-white">ACOMPANHE</span>
+                        </h3>
+                        <ul className="flex justify-center md:justify-start">
+                            <li className="text-white mx-2">
+                            <a href="https://www.instagram.com/4marketbrasil" target="_blank" rel="noopener noreferrer">
+                                <i className="text-5xl fa-brands fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li className="text-white mx-2">
+                            <a href="https://www.linkedin.com/company/4market" target="_blank" rel="noopener noreferrer">
+                                <i className="text-5xl fa-brands fa-linkedin"></i>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
             </main>
-            <footer className="flex md:flex-row md:justify-evenly gap-y-5 flex-col justify-center items-center p-10 px-3 z-99999 bg-slate-900">
-            <div className="px-4 text-center md:text-left">
-                <img className="w-64" src="img/logo.png" alt="logo" />
-            </div>
-            <div className="px-4 text-center md:text-left">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                    <span className="text-white">ACOMPANHE</span>
-                </h3>
-                <ul className="flex justify-center md:justify-start">
-                    <li className="text-white mx-2">
-                    <a href="https://www.instagram.com/4marketbrasil" target="_blank" rel="noopener noreferrer">
-                        <i className="text-5xl fa-brands fa-instagram"></i>
-                    </a>
-                    </li>
-                    <li className="text-white mx-2">
-                    <a href="https://www.linkedin.com/company/4market" target="_blank" rel="noopener noreferrer">
-                        <i className="text-5xl fa-brands fa-linkedin"></i>
-                    </a>
-                    </li>
-                </ul>
-            </div>
-
-            </footer>
         </>
        
 

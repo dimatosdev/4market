@@ -23,7 +23,7 @@ const slidesContent: SlideContent[] = [
             "Ao desenvolver estratégias eficazes de engajamento, você não apenas atrai a atenção do seu público, mas também o mantém interessado e envolvido com suamarca ao longo do tempo."
         ],
         linkText: "Fale com um especialista",
-        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+        imageUrl: "img/engajamento.jpg"
     },
     {
         id: 2,
@@ -33,7 +33,7 @@ const slidesContent: SlideContent[] = [
             "Isso envolve a identificação de desafios empresariais, a criação de soluções inovadoras e a implementação de medidas para otimizar processos e alcançar objetivos organizacionais"
         ],
         linkText: "Fale com um especialista",
-        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+        imageUrl: "img/desenvolvimento.jpg"
     },
     {
         id: 3,
@@ -43,7 +43,7 @@ const slidesContent: SlideContent[] = [
             "Resultando em mais vendas e receita para sua empresa,"
         ],
         linkText: "Fale com um especialista",
-        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+        imageUrl: "img/conversao.jpg"
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ const slidesContent: SlideContent[] = [
             "Resultando em mais vendas e receita para sua empresa,"
         ],
         linkText: "Fale com um especialista",
-        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+        imageUrl: "img/trafego.jpg"
     },
     
 ];
